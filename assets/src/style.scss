@@ -1,0 +1,153 @@
+@import 'compass/css3';
+/*------------------------------------------------------------------
+BarCamp Charlotte Styles
+By:Bermon Painter - http://bermonpainter.com
+------------------------------------------------------------------*/
+/*------------------------------------------------------------------
+RESET - inspired from:
+  - yui.yahooapis.com/2.8.1/build/base/base.css
+  - camendesign.com/design/
+  - praegnanz.de/weblog/htmlcssjs-kickstart
+  - Eric Meyer's reset stylesheet
+------------------------------------------------------------------*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, figure, footer, header,
+hgroup, menu, nav, section, menu,
+time, mark, audio, video
+{ margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent; }
+article, aside, figure, footer, header, hgroup, nav, section { display:block; }
+nav ul { list-style:none; }
+blockquote, q { quotes:none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content:''; content:none; }
+a { margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent; }
+ins { background-color:#ff9; color:#000; text-decoration:none; }
+mark { background-color:#ff9; color:#000; font-style:italic; font-weight:bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom:1px dotted #000; cursor:help; }
+table { border-collapse:collapse; border-spacing:0; }
+hr { display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0; }
+input, select { vertical-align:middle; }
+/*------------------------------------------------------------------
+CLEARFIX
+------------------------------------------------------------------*/
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; } /* Hides from IE-mac \*/
+.clearfix { display: block; }
+/*------------------------------------------------------------------
+FONT NOMINALIZATION
+developer.yahoo.com/yui/fonts
+------------------------------------------------------------------*/
+body { font:15px sans-serif; *font-size:small; *font:x-small; line-height:1.22; overflow-x: hidden; }
+table { font-size:inherit; font:100%; }
+select, input, textarea { font:99% sans-serif; }
+/* normalize monospace sizing */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* colors:
+   sky: #97ae3e 
+   grass: #9da846 */
+/* EXISTING STYLES */
+body { background: #97ae3e url(images/sclt-skyline.png) 50% 0% no-repeat;}
+  #home { background: #9da846 url(images/sclt-skyline.png) 50% 25% no-repeat;}
+
+/*
+  #home {}
+.container {width:}
+div.container {
+width: 500px;
+margin: 0px auto 30px;
+
+}
+body#home div.wrapper { margin-top: 30px; }
+div.logo {
+background: url(sclt-main-logo.png) 50% 50% no-repeat;
+height: 540px;
+}
+div.logo h1 {
+text-indent: -9999px;        
+}
+div.letterhead {
+}
+div.letterhead h1 {
+background: url(startclt-letterhead.gif) 0px 0px no-repeat;
+text-indent: -9999px;        
+height: 200px;
+float: left;
+margin: 0;
+}
+div.letterhead .contact {
+font-family: Geneva, sans-serif;
+font-size: 0.9em;
+text-align: right;
+float: right;
+color: #265f88;
+padding-top: 20px;
+}
+div.letterhead .contact span {
+color: #98ab3a;
+}
+
+div.boilerplate {
+text-align: center;
+font-family: Geneva, sans-serif;
+color: #666;
+}
+div.boilerplate h2 { color: #666; }
+div.copy {
+font-family: Geneva, sans-serif;
+color: #666;
+clear: both;
+}
+div.copy li em {
+  font-size: 1.2em;
+}
+a, a:visited {
+text-decoration: none;
+color: #98ab3a;
+}
+a:hover, a:active {
+color: #6fcd4b;
+}
+div.footer {
+color: #265f88;
+margin-top: 10px;
+font-family: Geneva, sans-serif;
+padding-top: 10px;
+border-top: 1px solid #666;
+}
+div.footer .info {float: left; }
+div.footer .contact {float: right; text-align: right; color: #98ab3a;}
+
+.links { text-align: right; margin-top: 30px }
+.links ul { list-style: none; display: inline; }
+.links li { padding-left: 20px; display: inline; }
+
+h1, h2, h3, h4, h5 { color: #265f88; }
+*/
+
+/* formspring */
+.fsForm td.fsRowBody { padding-left: 0;}
+div.fsPagination input {
+  font-size: 1.5em;
+}
+div.fsSubmit {
+margin: 10px 0px;
+text-align: left;
+}
+input.fsSubmitButton { 
+  background-color: #fff;
+  color: #265F88; 
+  padding: 10px; 
+  -webkit-border-radius: 5px; 
+}
+div.fsError{ width: 480px; text-align: left; }
