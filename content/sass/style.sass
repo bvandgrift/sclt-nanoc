@@ -1,0 +1,119 @@
+@import 'compass/css3'
+@import 'x/reset'
+
+
+/* CLEARFIX */
+
+.clearfix:after
+  content: "."
+  display: block
+  height: 0
+  clear: both
+  visibility: hidden
+.clearfix
+  display: inline-block
+* html .clearfix
+  height: 1%
+
+body
+  font: 15px sans-serif
+  *font-size: small
+  *font: x-small
+  line-height: 1.22
+  overflow-x: hidden
+  
+table
+  font-size: inherit
+  font: 100%
+  
+select, input, textarea
+  font: 99% sans-serif
+  
+/* normalize monospace sizing */
+pre, code, kbd, samp
+  font-family: monospace, sans-serif
+
+/* colors:
+   sky: #97ae3e 
+   grass: #9da846 */
+
+$sky: #97ae3e
+$grass: #9da846
+
+/* EXISTING STYLES */
+body 
+  background: #97ae3e url(images/sclt-skyline.png) 25% 30% no-repeat
+  #home
+    background: #9da846 url(images/sclt-skyline.png) 50% 25% no-repeat
+
+div.container
+  width: 500px
+  margin: 0px auto 30px
+
+body#home div.wrapper
+  margin-top: 30px
+
+div.letterhead 
+  h1 
+    background: url(startclt-letterhead.gif) 0px 0px no-repeat
+    text-indent: -9999px
+    height: 200px
+    float: left
+    margin: 0
+  .contact 
+    font-family: Geneva, sans-serif
+    font-size: 0.9em
+    text-align: right
+    float: right
+    color: #265f88
+    padding-top: 20px
+    span 
+      color: #98ab3a
+
+
+div.boilerplate 
+  text-align: center
+  font-family: Geneva, sans-serif
+  color: #666
+  h2
+    color: #666
+  
+div.copy 
+  font-family: Geneva, sans-serif
+  color: #666
+  clear: both
+  li em 
+    font-size: 1.2em
+
+a, a:visited 
+  text-decoration: none
+  color: #98ab3a
+
+a:hover, a:active 
+  color: #6fcd4b
+
+div.footer 
+  color: #265f88
+  margin-top: 10px
+  font-family: Geneva, sans-serif
+  padding-top: 10px
+  border-top: 1px solid #666
+  .info
+    float: left
+  .contact 
+    float: right
+    text-align: right
+    color: #98ab3a
+
+.links
+  text-align: right
+  margin-top: 30px
+  ul
+    list-style: none
+    display: inline
+    li
+      padding-left: 20px
+      display: inline
+
+h1, h2, h3, h4, h5 
+  color: #265f88

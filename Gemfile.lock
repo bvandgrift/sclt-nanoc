@@ -1,0 +1,21 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    compass (0.10.6)
+      haml (>= 3.0.4)
+    cri (1.0.1)
+    haml (3.0.25)
+    hpricot (0.8.4)
+    nanoc (3.1.6)
+      nanoc3 (>= 3.1.6)
+    nanoc3 (3.1.6)
+      cri (>= 1.0.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  compass
+  haml
+  hpricot
+  nanoc

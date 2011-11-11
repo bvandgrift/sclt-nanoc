@@ -1,0 +1,68 @@
+!!!
+%html.no-js{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    /[if IE] 
+    %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
+    -if @item[:title]
+      %title #{@item[:title]} | Startup Development, Coworking + Freelance | Start Charlotte
+    -else
+      %title Tech Startup + Freelance Support | Start Charlotte
+    %meta{:content => "Freelance, Graphic Design, Software Development, Payroll Services, Billing Services, Legal Services", :name => "keywords"}/
+    %meta{:content => "Services and Support for Freelance Graphic Designers, Writers, and Software Developers in Charlotte, North Carolina", :name => "description"}/
+    %meta{:content => "Ben Vandgrift", :name => "author"}/
+    %meta{:content => "width=device-width; initial-scale=1.0; maximum-scale=1.0;", :name => "viewport"}/
+    / Place favicon.ico and apple-touch-icon.png in the root of your domain and delete these references
+    %link{:href => "/favicon.ico", :rel => "shortcut icon"}/
+    %link{:href => "/apple-touch-icon.png", :rel => "apple-touch-icon"}/
+    / CSS : implied media="all"
+    %link{:href => "/stylesheets/style.css?v=1", :rel => "stylesheet"}/
+    / For the less-enabled mobile browsers like Opera Mini
+    %link{:href => "/stylesheets/handheld.css?v=1", :media => "handheld", :rel => "stylesheet"}/
+    / All JavaScript at the bottom, except for Modernizr which enables HTML5 elements &amp; feature detects
+    %script{:src => "/javascripts/modernizr-1.5.min.js"}
+  %body{:id => @item[:page]}
+    #container
+      %header
+        %h1 WHUT
+      #main
+        = yield
+      %footer
+      .info
+        Start Charlotte
+        %br/
+        1214 N Caldwell St
+        %br/
+        Charlotte, NC 28206
+      .contact
+        ben(@)startcharlotte.com
+        %br/
+        (980) 428-6025
+        %br/
+        %a{:href => "http://twitter.com/StartCLT"} @StartCLT
+    / ! end of #container
+    / Javascript at the bottom for fast page loading
+    / Grab Google CDN's jQuery. fall back to local if necessary
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"}
+    :javascript
+      !window.jQuery && document.write('<script src="js/jquery-1.4.2.min.js"><\/script>')    
+    %script{:src => "/js/plugins.js?v=1"}
+    %script{:src => "/js/script.js?v=1"}
+    /[if lt IE 7 ]
+      %script{:src => "/js/dd_belatedpng.js?v=1"}
+    / yui profiler and profileviewer - remove for production
+    %script{:src => "/js/profiling/yahoo-profiling.min.js?v=1"}
+    %script{:src => "/js/profiling/config.js?v=1"}
+    / end profiling code
+    /
+      asynchronous google analytics: mathiasbynens.be/notes/async-analytics-snippet
+      change the UA-XXXXX-X to be your site's ID
+    :javascript
+      var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+      (function(d, t) {
+       var g = d.createElement(t),
+           s = d.getElementsByTagName(t)[0];
+       g.async = true;
+       g.src = '//www.google-analytics.com/ga.js';
+       s.parentNode.insertBefore(g, s);
+      })(document, 'script');
